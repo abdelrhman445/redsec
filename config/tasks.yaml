@@ -1,0 +1,25 @@
+recon_task:
+  description: >
+    Conduct a reconnaissance on the target: {target}.
+    1. Identify technologies used (Wappalyzer style).
+    2. Find subdomains (if applicable).
+    3. Look for exposed sensitive files (robots.txt, sitemap.xml).
+    4. Summarize potential attack vectors.
+  expected_output: >
+    A markdown report summarizing the recon findings, including a list of open ports, 
+    technologies detected, and a threat level assessment.
+
+code_audit_task:
+  description: >
+    Analyze the following code snippet strictly:
+    
+    Code:
+    {code_snippet}
+
+    1. Identify security flaws (SQLi, XSS, RCE, etc.).
+    2. Identify logical errors or performance bottlenecks.
+    3. Rewrite the code to be secure and efficient.
+  expected_output: >
+    A detailed code review report containing:
+    - List of vulnerabilities found (High/Medium/Low).
+    - The "Patched" version of the code ready to copy-paste.

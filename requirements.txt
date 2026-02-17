@@ -1,0 +1,7 @@
+uagents
+crewai
+langchain-groq
+python-dotenv
+chromadb
+python-telegram-bot
+sentence-transformers
